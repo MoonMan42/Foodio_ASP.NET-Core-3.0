@@ -16,6 +16,9 @@ namespace Foodio
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+
+            // register framework services 
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -27,6 +30,8 @@ namespace Foodio
             }
 
             app.UseRouting();
+            app.UseStatusCodePages(); // returns status code in the event of an error
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {
