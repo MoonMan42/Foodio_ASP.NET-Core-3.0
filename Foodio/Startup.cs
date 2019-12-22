@@ -24,6 +24,7 @@ namespace Foodio
 
             // register our services for data
             services.AddScoped<IRecipeRepository, MockRecipeRepository>();
+            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
