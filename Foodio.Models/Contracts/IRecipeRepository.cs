@@ -7,7 +7,7 @@ namespace Foodio.Models.Contracts
 {
     public interface IRecipeRepository
     {
-        IEnumerable<Recipe> GetAllRecipes();
-        Recipe GetRecipeById(int recipeId);
+        IEnumerable<Recipe> GetAllRecipes { get; }
+        Recipe GetRecipeById(string recipeId);
     }
 }

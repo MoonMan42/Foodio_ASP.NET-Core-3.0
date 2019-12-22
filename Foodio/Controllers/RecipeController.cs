@@ -17,7 +17,7 @@ namespace Foodio.Controllers
 
         public IActionResult Index()
         {
-            return View(recipeRepository.GetAllRecipes());
+            return View(recipeRepository.GetAllRecipes);
         }
     }
 }
