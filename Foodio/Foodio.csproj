@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -8,6 +8,12 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\" />
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Foodio.DATA.InMemory\Foodio.DATA.InMemory.csproj" />
+    <ProjectReference Include="..\Foodio.DATA.SQL\Foodio.DATA.SQL.csproj" />
+    <ProjectReference Include="..\Foodio.Models\Foodio.Models.csproj" />
   </ItemGroup>
 
 </Project>
